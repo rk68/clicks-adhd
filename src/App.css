@@ -1,0 +1,375 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Import Roboto Condensed font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+/* Set font and color for main text */
+.main-text {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #333;
+}
+
+.App-description {
+  font-size: 1.4rem;
+  color: black;
+  margin: 20px 0;
+  padding-bottom: 3rem;
+}
+
+
+.App-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App-text {
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+  
+}
+
+.App-image-div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.App-image {
+  max-width:  100%;
+  padding-top: 5%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .App-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .App-text, .App-image-div {
+    width: 100%;
+  }
+}
+
+
+/* Add these styles to your existing CSS */
+
+/* Animate the app text */
+.App-text {
+  animation: slide-in-left 1s ease;
+}
+
+.App-description {
+  animation: slide-in-left 1s ease;
+}
+
+.Hero-button {
+  animation: slide-in-left 1s ease;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+/* Add gradient to "made easy" part of text */
+.gradient-text {
+  background: linear-gradient(to right, #002aff, rgb(166, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  
+}
+
+.cards-header {
+  background: linear-gradient(to right, #002aff, rgb(166, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+
+
+.App-header {
+  background-color: #00519c00;
+  color: black;
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.Header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 80px;
+  
+}
+
+.Header-logo {
+  max-height: 100px;
+}
+
+.Header-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.Header-list li {
+  margin-right: 20px;
+}
+
+.Header-list li:last-child {
+  margin-right: 0;
+}
+
+.Header-list a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.Header-list a:hover {
+  color: #aecff4;
+}
+
+.Main-text {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 50px 0;
+}
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.Hero-image {
+  width: 80%;
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.Hero-button {
+  background-color: #0059ff83;
+  color: #fff;
+  border: none;
+  padding: 20px 30px;
+  font-size: 24px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Hero-button:hover {
+  background-color: #003366;
+}
+
+.cards-header {
+  font-size: 3rem;
+}
+.Section-header {
+  color:black;
+}
+
+.Section-text {
+  color:black;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:40px;
+}
+
+.card {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.card-image-div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+}
+
+.card-image {
+  max-width:  100%;
+  max-height: 100%;
+  padding-top: 5%;
+  height: auto;
+}
+
+
+@media (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
+body {
+  background: white;
+}
+
+.Header-logo {
+  width: 50px;
+}
+
+
+
+/* Set background color for buttons */
+button {
+  background-color: #fff;
+}
+
+
+
+.form-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-text {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+label, input, button {
+  font-size: 18px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="email"] {
+  width: 300px;
+}
+
+button {
+  background-color: lightskyblue;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(50, 177, 255);
+}
+
+
+
+@media (max-width: 768px) {
+  .Testimonials-container {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .Testimonial-card {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .Hero {
+    margin: 20px 0;
+  }
+
+  .Hero-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .Main-text {
+    font-size: 36px;
+  }
+
+  .Header-list a {
+    font-size: 16px;
+  }
+
+
+
+
+  
+  
+}
